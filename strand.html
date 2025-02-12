@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHS Strands</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #cce7ff, #e0ffe6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #cc0066;
+            font-size: 32px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            position: relative;
+            cursor: pointer;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card .info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .card:hover .info {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .card img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rosales National High School Strand</h1>
+    <div class="container">
+        <!-- STEM -->
+        <div class="card">
+            <img src="C:\Users\My PC\OneDrive\Desktop\hatdog\stem.jpg" alt="STEM">
+            <div class="info">
+                <p><strong>STEM</strong>: The STEM strand focuses on teaching students how to apply these four subjects to solve real-world problems. Students learn about scientific inquiry, logical reasoning, and collaboration skills. They also develop critical thinking skills and innovative ideas.</p>
+            </div>
+        </div>
+        <!-- ABM -->
+        <div class="card">
+            <img src="C:\Users\My PC\OneDrive\Desktop\hatdog\abm.jpg" alt="ABM">
+            <div class="info">
+                <p><strong>ABM</strong>: The Accountancy, Business, and Management (ABM) strand is a Department of Education (DepEd) program that prepares students for college business courses. It introduces students to the basics of business, management, accounting, economics, finance, and marketing. </p>
+            </div>
+        </div>
+        <!-- HUMSS -->
+        <div class="card">
+            <img src="C:\Users\My PC\OneDrive\Desktop\hatdog\humms.jpg" alt="HUMSS">
+            <div class="info">
+                <p><strong>HUMSS</strong>: Humss Strand introduces SHS students to the basic subjects of Social Sciences and Languages. This is the ideal strand for those who are planning to take up journalism, communication arts, liberal arts, education, and other social science related courses in college. </p>
+            </div>
+        </div>
+        <!-- TVL -->
+        <div class="card">
+            <img src="C:\Users\My PC\OneDrive\Desktop\hatdog\tvl.jpg" alt="TVL">
+            <div class="info">
+                <p><strong>TVL</strong>: Technical-Vocational-Livelihood Track (TVL) - The TVL Track is one of the four tracks offered in SHS. It has four strands which are the Agri- Fishery Arts (AFA) Strand, Home Economics (HE) Strand, Industrial Arts (IA) Strand, and the Information and Communications Technology (ICT) Strand.</p>
+
+</div>
+        </div>
+        <!-- GAS -->
+        <div class="card">
+            <img src="C:\Users\My PC\OneDrive\Desktop\hatdog\gas.jpg" alt="GAS">
+            <div class="info"
+		 <p><strong>GAS</strong>: GAS is a Senior High School strand that takes on a generalist approach in preparing students for college. It covers various disciplines like Humanities, Social Sciences, Organization, and Management.</p>
+            
+
+</body>
+</html>
